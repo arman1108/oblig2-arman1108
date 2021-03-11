@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<head>
+    <title>Kino</title>
+    <meta charset="utf-8">
+    <style>
+        .feil {
+            color: red;
+        }
+
+        #plassering {
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+    </style>
+
+</head>
+<body class="bg-info text-white">
+
+<div id="plassering">
+<h1 class="text-white">Bestilling av kinobilletter</h1>
+<br>
+
+
+
+<table>
+
+    <tr>
+        <td class="text-white">Velg film:</td>
+        <td><select id="filmer">
+            <option>Velg en film</option>
+            <option>Inception</option>
+            <option>Interstellar</option>
+            <option>Maze Runner</option>
+        </select></td>
+    </tr>
+
+    <tr>
+        <td class="text-white">Antall:</td>  <td><input type="number" id="antall"></td> <td id="feltAntall" class="feil"></td>
+    </tr>
+
+    <tr>
+        <td class="text-white">Fornavn:</td>  <td><input type="text" id="fornavn"></td> <td id="feltFornavn" class="feil"></td>
+    </tr>
+
+    <tr>
+        <td class="text-white">Etternavn:</td> <td><input type="text" id="etternavn"></td> <td id="feltEtternavn" class="feil"></td>
+    </tr>
+
+    <tr>
+        <td class="text-white">Telefonnr:</td>  <td><input type="number" id="telefonnr"></td> <td id="feltTLF" class="feil"></td>
+    </tr>
+
+    <tr>
+        <td class="text-white">Epost:</td>  <td><input type="text" id="epost"></td> <td id="feltEpost" class="feil"></td>
+    </tr>
+
+</table>
+<br>
+
+        <button id="buy" class="btn btn-success">Kjøp billett</button>
+
+
+
+
+<br><br><br>
+<h2 class="text-white">Alle billetter</h2>
+<span id="resultat"></span>
+<br>
+<button class="btn btn-danger" id="slett">Slett alle billettene</button>
+
+</div>
+<script src="indexScript.js"></script>
+</body>
+</html>
